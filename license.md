@@ -1,0 +1,1 @@
+Tres en Raya React © 2025 by Coque Tornado is licensed under CC BY-NC-ND 4.0 
