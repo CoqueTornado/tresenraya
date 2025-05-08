@@ -1,0 +1,43 @@
+.pieceSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Si XPiece necesita estilos específicos más allá del fill en el SVG */
+.xPiece {
+  /* fill: var(--color-x); Ya está en el SVG */
+}
+
+/* Si OPiece necesita estilos específicos más allá del stroke en el SVG */
+.oPiece {
+  stroke: #2a9d8f; /* Hardcode color in CSS class */
+}
+
+/* Estilos para ReactorCore si se mueven de App.css o son específicos */
+.reactorCore {
+  /* Estilos específicos para reactor-core si los tuviera aquí */
+}
+
+.coreGlow {
+  /* fill: var(--background-dark); Ya está en el SVG */
+  /* stroke: url(#coreGradient); Ya está en el SVG */
+  /* stroke-width: 8; Ya está en el SVG */
+  /* animation: corePulse 2s infinite ease-in-out, coreColorShift 10s infinite linear; */ /* Ejemplo si se define aquí */
+}
+
+.coreOpacity {
+ /* fill: url(#coreGradient); Ya está en el SVG */
+ /* animation: coreOpacityPulse 2s infinite ease-in-out; */ /* Ejemplo si se define aquí */
+}
+
+.coreParticle {
+  /* stroke: var(--color-accent); Ya está en el SVG */
+  /* stroke-width: 2; Ya está en el SVG */
+  /* stroke-linecap: round; Ya está en el SVG */
+}
+
+/* Animaciones que estaban en App.css y son específicas de ReactorCore podrían ir aquí */
+/* @keyframes corePulse { ... } */
+/* @keyframes coreColorShift { ... } */
+/* @keyframes coreOpacityPulse { ... } */

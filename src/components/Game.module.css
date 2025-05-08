@@ -1,0 +1,53 @@
+.game {
+  text-align: center;
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.status {
+  font-size: 1.8em;
+  margin-bottom: 1.2em;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.resetBtn { /* Renombrado de reset-btn a resetBtn para camelCase */
+  padding: 12px 25px;
+  font-size: 1.2em;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 20px; /* Added to create space above the button */
+  margin-bottom: 20px; /* Added to ensure space below the button */
+  opacity: 1; /* Added to ensure full visibility */
+}
+
+.resetBtn:hover {
+  background: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255,107,107,0.3);
+}
+
+@media (max-width: 768px) {
+  .game {
+    padding: 1.5rem;
+  }
+  
+  .status {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .status {
+    font-size: 1.2em;
+  }
+}

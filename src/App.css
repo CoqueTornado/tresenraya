@@ -1,0 +1,45 @@
+:root {
+  --color-background: #f0f0f0;
+  --color-surface: rgba(255, 255, 255, 0.95);
+  --color-primary: #3a7bd5;
+  --color-primary-hover: #0077b6;
+  --color-accent: #ff5252;
+  --color-text: #2d3436;
+  --color-x: #e63946;
+  --color-o: #2a9d8f;
+  --color-winning: #fff9c4;
+  --color-border: #e9ecef;
+  --shadow-default: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Animaciones globales y variables CSS pueden permanecer aquí o moverse a index.css */
+
+/* Animación de pulso genérica, usada por Board.module.css (winning) y potencialmente otros */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Las animaciones específicas de GridLines y ReactorCore se han movido a sus respectivos módulos o se manejan en JS. */
+/* Las clases .App, .game, .board, .square, .status, .reset-btn, .piece-svg, etc., se han movido a sus respectivos archivos .module.css */
+/* Las media queries específicas de componentes también se han movido. */
+
+/* Si hay estilos verdaderamente globales para body, html, fuentes base, etc., podrían ir aquí o en src/index.css */
+/* Por ejemplo: */
+/*
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*/

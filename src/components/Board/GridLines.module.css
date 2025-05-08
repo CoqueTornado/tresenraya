@@ -1,0 +1,32 @@
+/* Grid Line Animations */
+@keyframes draw {
+  from {
+    stroke-dashoffset: 200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.grid path {
+  stroke-dasharray: 200;
+  animation: draw 0.8s ease-out forwards;
+}
+
+.grid:hover path {
+  stroke-width: 2; /* Aumentado desde 1.5 para mejor visibilidad en hover */
+  filter: drop-shadow(0 0 4px rgba(0, 255, 255, 0.6));
+}
+
+/* Estilos base para las líneas, si se quieren separar de los de App.css */
+.gridLineVertical {
+  /* stroke: url(#verticalGradient); Ya definido en el SVG */
+  /* stroke-width: 1.5; Ya definido en el SVG, modificado en hover */
+  /* stroke-linecap: round; Ya definido en el SVG */
+}
+
+.gridLineHorizontal {
+  /* stroke: url(#horizontalGradient); Ya definido en el SVG */
+  /* stroke-width: 1.5; Ya definido en el SVG, modificado en hover */
+  /* stroke-linecap: round; Ya definido en el SVG */
+}

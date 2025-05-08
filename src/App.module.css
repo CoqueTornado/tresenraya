@@ -1,0 +1,10 @@
+.app {
+  display: flex;
+  flex-direction: column; /* Added this line */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  padding: 20px;
+  box-sizing: border-box;
+}
